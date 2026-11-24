@@ -23,3 +23,15 @@ outputs/
 .DS_Store
 Thumbs.db
 .vscode/
+
+
+/Australia_AEMO/
+
+/outputs/
+
+__pycache__/
+
+.venv/
+venv/
+
+.env
