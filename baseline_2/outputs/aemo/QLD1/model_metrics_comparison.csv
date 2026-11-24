@@ -1,0 +1,3 @@
+source,region,model_id,train_rows,calibration_valid_rows,calibration_rmse_mw,calibration_mae_mw,pilot_rmse_mw,pilot_mae_mw,pilot_valid_rows,failure_threshold_mw,candidate_failure_count
+aemo,QLD1,model_a_ridge_v1,2868,732,640.6383100469159,537.3622283915797,1371.9074869683857,1263.823856779747,720,1601.5957751172896,191
+aemo,QLD1,model_b_gam_v1,2868,732,425.3872072403747,337.4801188618547,566.3512545470356,466.6124884679254,720,1063.468018100937,46

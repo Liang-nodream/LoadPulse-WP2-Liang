@@ -1,0 +1,44 @@
+{
+  "model": "calendar_gam_adapted",
+  "arguments": {
+    "csv": null,
+    "future_csv": null,
+    "time_col": "Timestamp",
+    "target_col": "Actual_Load",
+    "region_col": null,
+    "region": "DK1",
+    "country": "DK",
+    "subdivision": null,
+    "timezone": "Europe/Copenhagen",
+    "source_timezone": "UTC",
+    "unit": "MW",
+    "calibration_start": "2023-01-01",
+    "test_start": "2023-07-01",
+    "lam": 10.0,
+    "quantile": 0.99,
+    "min_duration": 3,
+    "no_interactions": false,
+    "inject_failures": false,
+    "output_dir": "outputs"
+  },
+  "metrics": {
+    "calibration": {
+      "MAE_MW": 57.41231272353866,
+      "RMSE_MW": 71.4141379014285,
+      "Bias_MW": 4.370907842968064,
+      "N": 4344
+    },
+    "test": {
+      "MAE_MW": 55.72649929354076,
+      "RMSE_MW": 70.33920818066983,
+      "Bias_MW": 1.0311455360222443,
+      "N": 4416
+    }
+  },
+  "threshold_mw": 178.76669056119772,
+  "calibration_end": "2023-06-30 23:00:00+00:00",
+  "training_start": "2021-01-01 00:00:00+00:00",
+  "training_end": "2022-12-31 23:00:00+00:00",
+  "point_exceedances": 53,
+  "events": 0
+}

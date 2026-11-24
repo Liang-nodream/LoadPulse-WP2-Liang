@@ -1,0 +1,51 @@
+{
+  "data_source": "aemo",
+  "region": "QLD1",
+  "source_files": [
+    "AEMO_NEM_QLD1_RAW_2021H1.csv"
+  ],
+  "model_id": "model_a_ridge_v1",
+  "commit": null,
+  "hyperparameters": {
+    "alpha": 1.0
+  },
+  "calendar_only": true,
+  "holiday_calendar": "AU/QLD",
+  "timezone": "Australia/Brisbane",
+  "timezone_meaning": "AEMO fixed AEST market clock (not DST-adjusted state wall time)",
+  "origin_local_hour": 12,
+  "target_timestamp": "interval_start",
+  "release_delay_after_interval_end_hours": 0.0,
+  "refit_during_calibration_or_pilot": false,
+  "configured_local_periods_end_exclusive": {
+    "train": [
+      "2021-01-01",
+      "2021-05-01"
+    ],
+    "calibration": [
+      "2021-05-01",
+      "2021-06-01"
+    ],
+    "pilot": [
+      "2021-06-01",
+      "2021-07-01"
+    ]
+  },
+  "training_rows": 2868,
+  "first_training_target_utc": "2020-12-31T14:00:00+00:00",
+  "last_training_target_utc": "2021-04-30T01:00:00+00:00",
+  "last_calibration_target_utc": "2021-05-31T01:00:00+00:00",
+  "calibration": {
+    "rmse_mw": 640.6383100469159,
+    "mae_mw": 537.3622283915797,
+    "n_valid": 732
+  },
+  "pilot": {
+    "rmse_mw": 1371.9074869683857,
+    "mae_mw": 1263.823856779747,
+    "n_valid": 720
+  },
+  "threshold_multiplier": 2.5,
+  "failure_threshold_mw": 1601.5957751172896,
+  "candidate_failure_count": 191
+}

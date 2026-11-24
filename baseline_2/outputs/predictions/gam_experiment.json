@@ -1,0 +1,45 @@
+{
+  "data_source": "synthetic",
+  "model_id": "model_b_gam_v1",
+  "commit": null,
+  "hyperparameters": {
+    "lam": 10.0
+  },
+  "calendar_only": true,
+  "timezone": "Australia/Brisbane",
+  "origin_local_hour": 12,
+  "target_timestamp": "interval_start",
+  "release_delay_after_interval_end_hours": 0.0,
+  "refit_during_calibration_or_pilot": false,
+  "configured_local_periods_end_exclusive": {
+    "train": [
+      "2023-01-01",
+      "2023-10-01"
+    ],
+    "calibration": [
+      "2023-10-01",
+      "2023-11-01"
+    ],
+    "pilot": [
+      "2023-11-01",
+      "2023-12-01"
+    ]
+  },
+  "training_rows": 6540,
+  "first_training_target_utc": "2022-12-31T14:00:00+00:00",
+  "last_training_target_utc": "2023-09-30T01:00:00+00:00",
+  "last_calibration_target_utc": "2023-10-31T01:00:00+00:00",
+  "calibration": {
+    "rmse_mw": 107.63140113144065,
+    "mae_mw": 86.17066143886112,
+    "n_valid": 732
+  },
+  "pilot": {
+    "rmse_mw": 110.64448817046215,
+    "mae_mw": 87.12693236068648,
+    "n_valid": 720
+  },
+  "threshold_multiplier": 2.5,
+  "failure_threshold_mw": 269.07850282860164,
+  "candidate_failure_count": 13
+}

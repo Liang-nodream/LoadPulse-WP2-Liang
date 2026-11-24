@@ -1,0 +1,51 @@
+{
+  "data_source": "aemo",
+  "region": "QLD1",
+  "source_files": [
+    "AEMO_NEM_QLD1_RAW_2021H1.csv"
+  ],
+  "model_id": "model_b_gam_v1",
+  "commit": null,
+  "hyperparameters": {
+    "lam": 10.0
+  },
+  "calendar_only": true,
+  "holiday_calendar": "AU/QLD",
+  "timezone": "Australia/Brisbane",
+  "timezone_meaning": "AEMO fixed AEST market clock (not DST-adjusted state wall time)",
+  "origin_local_hour": 12,
+  "target_timestamp": "interval_start",
+  "release_delay_after_interval_end_hours": 0.0,
+  "refit_during_calibration_or_pilot": false,
+  "configured_local_periods_end_exclusive": {
+    "train": [
+      "2021-01-01",
+      "2021-05-01"
+    ],
+    "calibration": [
+      "2021-05-01",
+      "2021-06-01"
+    ],
+    "pilot": [
+      "2021-06-01",
+      "2021-07-01"
+    ]
+  },
+  "training_rows": 2868,
+  "first_training_target_utc": "2020-12-31T14:00:00+00:00",
+  "last_training_target_utc": "2021-04-30T01:00:00+00:00",
+  "last_calibration_target_utc": "2021-05-31T01:00:00+00:00",
+  "calibration": {
+    "rmse_mw": 425.3872072403747,
+    "mae_mw": 337.4801188618547,
+    "n_valid": 732
+  },
+  "pilot": {
+    "rmse_mw": 566.3512545470356,
+    "mae_mw": 466.6124884679254,
+    "n_valid": 720
+  },
+  "threshold_multiplier": 2.5,
+  "failure_threshold_mw": 1063.468018100937,
+  "candidate_failure_count": 46
+}

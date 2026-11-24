@@ -1,0 +1,45 @@
+{
+  "data_source": "synthetic",
+  "model_id": "model_a_ridge_v1",
+  "commit": null,
+  "hyperparameters": {
+    "alpha": 1.0
+  },
+  "calendar_only": true,
+  "timezone": "Australia/Brisbane",
+  "origin_local_hour": 12,
+  "target_timestamp": "interval_start",
+  "release_delay_after_interval_end_hours": 0.0,
+  "refit_during_calibration_or_pilot": false,
+  "configured_local_periods_end_exclusive": {
+    "train": [
+      "2023-01-01",
+      "2023-10-01"
+    ],
+    "calibration": [
+      "2023-10-01",
+      "2023-11-01"
+    ],
+    "pilot": [
+      "2023-11-01",
+      "2023-12-01"
+    ]
+  },
+  "training_rows": 6540,
+  "first_training_target_utc": "2022-12-31T14:00:00+00:00",
+  "last_training_target_utc": "2023-09-30T01:00:00+00:00",
+  "last_calibration_target_utc": "2023-10-31T01:00:00+00:00",
+  "calibration": {
+    "rmse_mw": 106.11818034581813,
+    "mae_mw": 84.64683143392132,
+    "n_valid": 732
+  },
+  "pilot": {
+    "rmse_mw": 102.88345512415854,
+    "mae_mw": 82.29305107124681,
+    "n_valid": 720
+  },
+  "threshold_multiplier": 2.5,
+  "failure_threshold_mw": 265.29545086454533,
+  "candidate_failure_count": 11
+}
