@@ -1,0 +1,34 @@
+# Python cache and temporary files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+tempCodeRunnerFile.py
+
+# Python virtual environments
+.venv/
+venv/
+
+# Local settings and credentials
+.env
+.env.*
+!.env.example
+.env1
+*.key
+
+# Locally acquired input datasets (do not commit raw or processed data here)
+Australia_AEMO/
+data/raw/
+data/processed/
+baseline_2/Australia_AEMO/
+
+# Generated model output (retain locally; submit selected results separately)
+outputs/
+baseline_2/outputs/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Keep deliverables/ and paper/ trackable.
+# (Do not add patterns that ignore those directories.)
