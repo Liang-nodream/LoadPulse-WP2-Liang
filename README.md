@@ -79,6 +79,3 @@ python main.py --source aemo --region QLD1 --models both
 
 下一步包含 M0、seasonal-naive 對照、樣本外預測與資料品質旗標的整合。**既有 Ridge／GAM Pilot 不代表新版 M0～M3+ 階梯已完成。**
 
-## 參考文獻
-
-Zimmermann & Ziel (2025), *Efficient Mid-term Forecasting of Hourly Electricity Load Using Generalized Additive Models*。
