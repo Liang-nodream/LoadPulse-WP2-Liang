@@ -25,9 +25,9 @@ Thumbs.db
 .vscode/
 
 
-/Australia_AEMO/
+baseline_2/Australia_AEMO/
 
-/outputs/
+baseline_2/outputs/
 
 __pycache__/
 
